@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+    font-family: 'Fredoka One', cursive;
+    background-color: #293462;
+    background-image: url(./imagenes/bosque.webp);
+}
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title {
+    color: #F2D388;
+    font-size: 80px;
+    margin: inherit
+}
+.subtitulo {
+    color: #472D2D;
+    font-size: 50px
+}
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+}
+.tarjeta-mokepon {
+    display: flex;
+    width: 117px;
+    height: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px solid #023047;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #E8C07D;
+}
+.tarjeta-mokepon img {
+    width: 85px;
+}
+input {
+    display: none;
+}
+input:hover + label{
+    background-color: #FFEEAF;
+}
+input:checked + label{
+    background-color: #FFEEAF;
+}
+
+#boton-mascota{
+    font-family: 'Fredoka One', cursive;
+    color: #533535;
+    font-size: initial;
+    display: flex;
+    width: 120px;
+    height: 80px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px solid #8A8635;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #9FC088;
+}
+#seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boton-de-ataque{
+    font-family: 'Fredoka One', cursive;
+    width: 110px;
+    height: 140px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px solid #023047;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #E8C07D;
+}
+#mensajes{
+    font-family: 'Fredoka One', cursive;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    background: #9FC088;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    border: 2px solid #8A8635
+}
+.boton-de-ataque img{
+    width: 85px;
+}
+#boton-reiniciar {
+    font-family: 'Fredoka One', cursive;
+    color: #533535;
+    font-size: initial;
+    margin: 5px;
+    border: 2px solid #8A8635;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 90px;
+    height: 30px;
+}
+.ataques{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100px 100px 
+}
+@media (max-width: 800px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+}
